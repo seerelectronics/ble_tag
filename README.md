@@ -17,3 +17,9 @@ Vref selects the voltage level used by the programmer. It is connected directly 
 
 ![bild](https://github.com/seerelectronics/ble_tag/assets/61621920/fe332da2-648e-4ee0-98c0-fce6769b22ec)
 
+New board with CR2032 battery holder should not be powered from programming card, always use battery.
+
+The internal DC/DC regulators should be disabled for this board, meaning that the following functions should be called:
+
+    nrf_power_dcdcen_vddh_set(false);
+    nrf_power_dcdcen_set(false);
