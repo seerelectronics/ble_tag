@@ -27,3 +27,10 @@ The internal DC/DC regulators should be disabled for this board, meaning that th
 
     nrf_power_dcdcen_vddh_set(false);
     nrf_power_dcdcen_set(false);
+
+
+## CR2032 board v2
+
+Second version of CR2032 board has corrections done on power supply. Internal voltage is now 1.8v, if using programming card for power VDD must be set to 1.8v.
+
+Internal DC/DC regulator should be enabled for this board, however vddh regulator should be disabled as VDD and VDDH are both connected to 1.8v.
