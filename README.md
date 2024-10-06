@@ -31,6 +31,6 @@ The internal DC/DC regulators should be disabled for this board, meaning that th
 
 ## CR2032 board v2
 
-Second version of CR2032 board has corrections done on power supply. Internal voltage is now 1.8v, if using programming card for power VDD must be set to 1.8v.
+Second version of CR2032 board has corrections done on power supply. This version can be identified but looking at programming header which is moved to opposite side of battery holder. On v1 the header is located next to the holder. Internal voltage is now 1.8v, if using programming card for power Vout must be set to 1.8v. Vref must also be set to 1.8v.
 
 Internal DC/DC regulator should be enabled for this board, however vddh regulator should be disabled as VDD and VDDH are both connected to 1.8v.
